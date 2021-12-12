@@ -1,0 +1,56 @@
+<!--
+
+    Primeiro projeto utilizando HTML, CSS
+    Por: Gabriel Andreello.
+
+ --> 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID19 - Dataset</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/core.js"></script>
+</head>
+
+<body onload="getData( 'AC' )">
+
+    <center>
+
+    <div id="body"> 
+        Seja bem-vindo! <br>
+        Este site é um Projeto Pessoal para estudar HTML & CSS com um pouco de JavaScript. <br>
+        Ele te informa informações precisas e atualizadas sobre o COVID-19 no seu estado. <br>
+    </div>
+
+    <div id="covid">
+       <br> Escolha um estado: 
+         <select id="select" onchange="getData( this.value )">
+              <option value="AC">Acre</option>
+              <option value="SP">São Paulo</option>
+              <option value="BA">Bahia</option>
+              <option value="AL">Alagoas</option>
+              <option value="AC">Acre</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="CE">Ceará</option>
+              <option value="RR">Roraima</option>
+        </select>
+        <br><br>
+    </div>
+            <div class="ac_box_top">
+                  <div class="ac_box_cont">
+                    <br>Dados: <br><br>
+                    <span id="confirmed"></span><br>
+                    <span id="suspects"></span><br>
+                    <span id="deaths"></span><br>
+                    <span id="refuses"></span><br>
+                    <span id="request-date"></span><br>
+                 </div>
+            </div>
+            <br><br><br>
+            <img src="img/covid.png" alt="covid" class="covid" width="230px" height="230px">
+
+    </center>
+</body>
+</html>

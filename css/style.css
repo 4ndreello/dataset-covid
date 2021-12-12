@@ -1,0 +1,19 @@
+* {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.ac_box_top { 
+    border: 2px solid #000000; 
+    border-bottom: none; 
+    height: 150px; 
+    width: 323px; 
+}
+
+.ac_box_cont {
+     border-left: 2px solid #000000; 
+     border-right: 2px solid #000000; 
+     border-bottom: 2px solid #000000; 
+     height: 340px;
+}
